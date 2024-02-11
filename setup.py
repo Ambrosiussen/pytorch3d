@@ -72,6 +72,7 @@ def get_extensions():
             "-D__CUDA_NO_HALF_OPERATORS__",
             "-D__CUDA_NO_HALF_CONVERSIONS__",
             "-D__CUDA_NO_HALF2_OPERATORS__",
+            "-DWIN32_LEAN_AND_MEAN",
         ]
         if os.name != "nt":
             nvcc_args.append("-std=c++17")
